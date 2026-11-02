@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal | Inkanyezi Events</title>
+    <link rel="stylesheet" href="css/Style.css">
+    <meta name="description" content="Access the Inkanyezi Events client portal.">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Inkanyezi Events</h1>
+        <p><em>Crafting Extraordinary Experiences</em></p>
+
+        <!-- Main Navigation Bar -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html">Client Portal</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Intro Section -->
+        <section>
+            <h2>Client Portal</h2>
+            <p>Welcome to the Inkanyezi Events client portal.</p>
+        </section>
+
+        <hr>
+
+        <!-- Section 1: Returning Client Login -->
+        <section>
+            <h2>Returning Clients Log In</h2>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><strong>Sign In to Your Account</strong></legend>
+                    <br>
+
+                    <label for="login-email">Email Address *</label><br>
+                    <input type="email" id="login-email" name="login-email" required placeholder="name@example.com"><br><br>
+
+                    <label for="login-password">Password *</label><br>
+                    <input type="password" id="login-password" name="login-password" required placeholder="Enter your password"><br><br>
+
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me on this device</label><br><br>
+
+                    <button type="submit">Log In</button>
+                    <button type="button"><a href="#">Forgot Password?</a></button>
+                </fieldset>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- Section 2: New Client Registration -->
+        <section>
+            <h2>New Client Registration</h2>
+            <p>If you've recently booked an event with us, create an account below to access your client portal.</p>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><strong>Create New Account</strong></legend>
+                    <br>
+
+                    <label for="reg-fname">First Name *</label><br>
+                    <input type="text" id="reg-fname" name="reg-fname" required placeholder="e.g. Jane"><br><br>
+
+                    <label for="reg-lname">Last Name *</label><br>
+                    <input type="text" id="reg-lname" name="reg-lname" required placeholder="e.g. Doe"><br><br>
+
+                    <label for="reg-email">Email Address *</label><br>
+                    <input type="email" id="reg-email" name="reg-email" required placeholder="jane@example.com"><br><br>
+
+                    <label for="booking-ref">Event Booking Reference Number</label><br>
+                    <input type="text" id="booking-ref" name="booking-ref" placeholder="e.g. EE-2026-8912"><br><br>
+
+                    <label for="reg-password">Create Password *</label><br>
+                    <input type="password" id="reg-password" name="reg-password" minlength="8" required placeholder="At least 8 characters"><br><br>
+
+                    <label for="confirm-password">Confirm Password *</label><br>
+                    <input type="password" id="confirm-password" name="confirm-password" minlength="8" required placeholder="Re-enter your password"><br><br>
+
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a> *</label><br><br>
+
+                    <button type="submit">Create Account</button>
+                    <button type="reset">Clear Form</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Elite Events. All rights reserved.</p>
+        <p>Email: <a href="mailto:nqubekogcaba30@gmail.com">nqubekogcaba30@gmail.com</a> | Phone: +27 71 915 6790</p>
+    </footer>
+    <script src="js/inkanyezi.js" defer></script>
+
+</body>
+</html>

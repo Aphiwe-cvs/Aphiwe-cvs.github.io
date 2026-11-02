@@ -1,0 +1,639 @@
+
+/* 
+   INKANYEZI EVENTS
+   PART 2 - IMPROVED CSS STYLESHEET
+    */
+
+
+/* 1. DEFAULT STYLES */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #eaf4ff;
+    color: #172554;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 2. TYPOGRAPHY STYLES */
+
+h1, h2, h3, h4 {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #123c82;
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* 3. HEADER STYLES */
+
+header {
+    background-color: #0755c9;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+header h1,
+header p {
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+
+/* 4. NAVIGATION MENU */
+
+nav {
+    background-color: #0647a5;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: auto;
+}
+
+/* Navigation inside the main header */
+
+header nav {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    display: inline-block;
+    padding: 9px 14px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* Navigation hover effect */
+
+nav a:hover {
+    background-color: #8b00c9;
+    color: white;
+}
+
+nav a:focus {
+    outline: 3px solid white;
+    outline-offset: 3px;
+}
+
+
+/* 5. MAIN CONTENT LAYOUT */
+
+main {
+    max-width: 1100px;
+    width: 95%;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+article {
+    background-color: #f3f7ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #0755c9;
+}
+
+figure {
+    background-color: white;
+    border: 1px solid #d6e2f5;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 6. IMAGE STYLING */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.logo {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.logo img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* 7. LINKS AND BUTTONS */
+
+a {
+    color: #0647a5;
+}
+
+a:hover {
+    color: #8b00c9;
+}
+
+a:focus {
+    outline: 2px solid #8b00c9;
+    outline-offset: 3px;
+}
+
+a.btn,
+button {
+    display: inline-block;
+    background-color: #0755c9;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+button:hover,
+a.btn:hover {
+    background-color: #8b00c9;
+    color: white;
+    transform: translateY(-2px);
+}
+
+button:focus,
+a.btn:focus {
+    outline: 3px solid #8b00c9;
+    outline-offset: 3px;
+}
+
+button:active,
+a.btn:active {
+    transform: scale(0.97);
+}
+
+button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+
+/* 8. FORM STYLING */
+
+form {
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+fieldset {
+    border: 2px solid #0755c9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #123c82;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+label {
+    display: inline-block;
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 12px;
+    margin: 5px 0 15px;
+    border: 1px solid #aabbd3;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #0755c9;
+    border-color: #0755c9;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+input:invalid:focus,
+textarea:invalid:focus {
+    border-color: red;
+}
+
+
+/* 9. FOOTER STYLING */
+
+footer {
+    background-color: #0647a5;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 35px;
+}
+
+footer p {
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: #d9a8ff;
+}
+
+
+/* 10. TABS */
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tab-button.active {
+    background-color: #8b00c9;
+}
+
+.tab-panel {
+    display: none;
+    background-color: #eaf4ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.tab-panel.active {
+    display: block;
+}
+
+
+/* 11. ACCORDION */
+
+.accordion-button {
+    width: 100%;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.accordion-answer {
+    background-color: #eaf4ff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+/* 12. GALLERY AND LIGHTBOX */
+
+.gallery-image {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.04);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox.visible {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 35px;
+}
+
+
+/* 13. SERVICE SEARCH AND DISPLAY */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-grid article {
+    background-color: #f3f7ff;
+    border-left: 4px solid #8b00c9;
+}
+
+.service-grid article:hover {
+    transform: translateY(-4px);
+}
+
+#result-message {
+    font-weight: bold;
+    color: #123c82;
+}
+
+
+/* 14. SCROLL ANIMATIONS */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease,
+                transform 0.6s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* 15. INTERACTIVE MAP */
+
+#event-map {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+
+/* 16. MOBILE NAVIGATION BUTTON */
+
+.menu-toggle {
+    display: none;
+}
+
+
+/* 17. TABLET RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 8px;
+    }
+
+    main {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Mobile menu controlled by JavaScript */
+
+    .menu-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+
+    nav {
+        margin: 10px auto;
+    }
+
+    header nav,
+    body > nav {
+        display: none;
+    }
+
+    header nav.show-menu,
+    body > nav.show-menu {
+        display: block;
+    }
+
+    nav.show-menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #event-map {
+        height: 280px;
+    }
+}
+
+
+/* 18. SMALL MOBILE RESPONSIVE DESIGN */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    main {
+        width: 100%;
+        padding: 15px;
+        margin: 10px auto;
+        border-radius: 0;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    figure {
+        padding: 8px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    button,
+    a.btn {
+        max-width: 100%;
+    }
+
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+
+/* 19. ACCESSIBILITY - REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
